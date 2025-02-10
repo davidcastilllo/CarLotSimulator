@@ -26,6 +26,8 @@ namespace CarLotSimulator
             carOne.HonkNoise = "BRR BRR";
             carOne.EngineNoise = "DRDRDRD";
             carOne.IsDriveable = true;
+            
+            Console.WriteLine($"Number of cars in lot: {CarLot.numberOfCars}");
 
             var carTwo = new Car();
 
@@ -36,6 +38,8 @@ namespace CarLotSimulator
             carTwo.EngineNoise = "BDBDBDB";
             carTwo.IsDriveable = true;
 
+            Console.WriteLine($"Number of cars in lot: {CarLot.numberOfCars}");
+
             var carThree = new Car();
 
             carThree.Make = "Toyota";
@@ -44,6 +48,8 @@ namespace CarLotSimulator
             carThree.HonkNoise = "BOM BOM";
             carThree.EngineNoise = "GRGRGRG";
             carThree.IsDriveable = true;
+
+            Console.WriteLine($"Number of cars in lot: {CarLot.numberOfCars}.");
 
             carOne.MakeEngineNoise(carOne.EngineNoise);
             carOne.MakeHonkNoise(carOne.HonkNoise);
@@ -68,6 +74,8 @@ namespace CarLotSimulator
             //It should have at least one property: a List of cars
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
+            
         }
     }
 }
